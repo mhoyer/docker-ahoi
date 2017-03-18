@@ -27,7 +27,8 @@
 
 ### List running docker containers
 
-___
+    docker ps
+    # alt: docker container ls
 
 ### Stop docker container
 
