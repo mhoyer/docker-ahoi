@@ -23,7 +23,7 @@
 
 ### Run docker container
 
-___
+    docker run docker-ahoi/round-1 -p 5000:5000
 
 ### List running docker containers
 
