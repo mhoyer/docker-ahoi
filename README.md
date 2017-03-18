@@ -15,7 +15,7 @@
 
 ### Write your first Dockerfile
 
-Fill out `Dockerfile`
+✓ Fill out `Dockerfile`
 
 ### Build docker image
 
