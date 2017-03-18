@@ -1,3 +1,11 @@
+version: '2'
+services:
+  flask:
 # Start app on port 5000
+    ports:
+      - 5000:5000
 # Build from current directory
+    build: .
 # Mount app data into container
+    volumes:
+      - ./testapp:/usr/local/opt/testapp
