@@ -19,7 +19,7 @@
 
 ### Build docker image
 
-___
+    docker build -t docker-ahoi/round-1 .
 
 ### Run docker container
 
