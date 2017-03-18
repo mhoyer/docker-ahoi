@@ -19,11 +19,15 @@
 
 ### Build docker image
 
-    docker build -t docker-ahoi/round-1 .
+    docker build -t docker-ahoi:round-1 .
 
 ### Run docker container
 
-    docker run docker-ahoi/round-1 -p 5000:5000
+    docker run docker-ahoi:round-1 -p 5000:5000 --name=ahoi-r1
+
+To publish all ports of container 1:1
+
+    docker run docker-ahoi:round-1 -P --name=ahoi-r1
 
 ### List running docker containers
 
@@ -32,41 +36,42 @@
 
 ### Stop docker container
 
-    docker stop <CONTAINER>
-    # docker kill <CONTAINER> # hard kill
+    docker stop ahoi-r1
+    # docker kill ahoi-r1 # hard kill
 
 ### List all docker containers
 
-    docker image ls
+    docker ps -a
 
 ### Remove created container
 
-___
+    docker rm ahoi-r1
 
 ### Run docker container with removal
 
-___
+    docker run docker-ahoi:round-1 -p 5000:5000 --name=ahoi-r1 --rm 
 
 ### Run docker container in background
 
-___
+    docker run docker-ahoi:round-1 -p 5000:5000 --name=ahoi-r1 -d
 
 ### Step into container
 
-___
+    docker exec ahoi-r1 -it sh
+    docker exec ahoi-r1 -it sh --tty
 
 ### Stop container
 
-___
+    docker stop ahoi-r1
 
 ### Start container
 
-___
+    docker start ahoi-r1
 
 ### Run docker container and step into
 
-___
+    docker run docker-ahoi:round-1 -p 5000:5000 --name=ahoi-r1 -rm -it sh
 
 ### Run docker container with mounted volume
 
-___
+    docker run docker-ahoi:round-1 -
