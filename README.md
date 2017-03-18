@@ -37,7 +37,7 @@
 
 ### List all docker containers
 
-___
+    docker image ls
 
 ### Remove created container
 
