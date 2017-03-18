@@ -32,7 +32,8 @@
 
 ### Stop docker container
 
-___
+    docker stop <CONTAINER>
+    # docker kill <CONTAINER> # hard kill
 
 ### List all docker containers
 
